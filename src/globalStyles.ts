@@ -28,7 +28,6 @@ export const GlobalStyles = createGlobalStyle`
       --night: #090A0D;
       --white: #F3F3F3;
       --lessdark: #16181A;
-   
       --yellow: #fbd87b;
     }
 `;

@@ -44,7 +44,7 @@ export const Welcome = styled.div`
   justify-content: flex-start;
   text-align: start;
   font-weight: 600;
-  padding: 5px 15px;
+  padding: 5px 40px;
   color: var(--yellow);
   font-family: "Poppins", sans-serif;
   flex: 1;
@@ -56,7 +56,7 @@ export const Intro = styled.div`
   width: 100%;
   flex: 1;
   /* background-color: blue; */
-  padding: 20px;
+  padding: 15px 15px 15px 40px;
   display: flex;
   align-items: flex-start;
   text-align: start;
@@ -64,6 +64,4 @@ export const Intro = styled.div`
   letter-spacing: 2px;
 `;
 
-export const Image = styled.img`
-  transform: scale(70%);
-`;
+export const Image = styled.img``;

@@ -13,22 +13,21 @@ export const Wrapper = styled.div`
 `;
 
 export const TitleContainer = styled.div`
-  width: 25%;
+  flex: 1;
   height: 100%;
   display: flex;
   justify-content: flex-start;
   align-content: center;
   padding: 15px;
-  margin-left: 25px;
+  margin-left: 45px;
 `;
 
 export const LinksContainer = styled.div`
-  width: 25%;
+  flex: 0.6;
+  padding: 5px;
   height: 100%;
   display: flex;
-  padding: 5px;
   gap: 23px;
-  margin-right: 12px;
   justify-content: center;
   align-items: center;
 `;
