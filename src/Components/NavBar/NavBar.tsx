@@ -1,16 +1,67 @@
-import { Link, LinksContainer, Logo, TitleContainer, Wrapper } from "./styles";
+import {
+  Container,
+  Icon,
+  IconContainer,
+  Link,
+  LinksContainer,
+  Logo,
+  TitleContainer,
+  Wrapper,
+} from "./styles";
+import { BsChevronDoubleUp } from "react-icons/bs";
+interface props {
+  scrolled: boolean;
+  page?: number;
+}
+const NavBar: React.FC<props> = ({ scrolled, page }) => {
+  function HandleScroll(id: string) {
+    const About = document.getElementById(id);
+    if (About) About.scrollIntoView({ behavior: "smooth" });
+  }
 
-const NavBar: React.FC = () => {
   return (
     <Wrapper>
-      <TitleContainer>
-        <Logo src={require("../../Assests/logo.png")} alt="logo" />
-      </TitleContainer>
-      <LinksContainer>
-        <Link>Skills</Link>
-        <Link>Projects</Link>
-        <Link>About me</Link>
-      </LinksContainer>
+      <Container>
+        <TitleContainer stretch={scrolled}>
+          <Logo src={require("../../Assests/logo.png")} alt="logo" />
+        </TitleContainer>
+        {scrolled && (
+          <IconContainer
+            onClick={() => {
+              page === 1 ? HandleScroll("AboutMe") : HandleScroll("skills");
+            }}
+          >
+            <Icon>
+              <BsChevronDoubleUp
+                style={{ width: "100%", fontSize: "40px", cursor: "pointer" }}
+              />
+            </Icon>
+          </IconContainer>
+        )}
+        <LinksContainer>
+          <Link
+            onClick={() => {
+              HandleScroll("skills");
+            }}
+          >
+            Skills
+          </Link>
+          <Link
+            onClick={() => {
+              HandleScroll("projects");
+            }}
+          >
+            Projects
+          </Link>
+          <Link
+            onClick={() => {
+              HandleScroll("AboutMe");
+            }}
+          >
+            About me
+          </Link>
+        </LinksContainer>
+      </Container>
     </Wrapper>
   );
 };

@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     	margin: 0;
       padding: 0;
       scroll-behavior: smooth;
+      
       font-family: 'Arvo', serif;
       ::-webkit-scrollbar {
         width: 6px;
@@ -21,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
         background: #888;
       }
 	  }
-    body {
+    body {overflow:hidden;
       background-color: var(--night);
     }
     :root {
