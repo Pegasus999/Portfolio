@@ -115,9 +115,11 @@ export const ImageContainer = styled.div<Props>`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  user-select: none;
   animation: ${(props) => (props.flip ? flip : "none")} 1s ease-in-out;
 `;
 
 export const Image = styled.img`
   border-radius: 16px;
+  user-select: none;
 `;

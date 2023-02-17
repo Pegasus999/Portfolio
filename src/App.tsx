@@ -1,10 +1,10 @@
 import Home from "./Components/Home/Home";
-import Main from "./Components/Skills/Main/Main";
-
+import Projects from "./Components/Projects/Main";
+import Main from "./Components/Skills/Main";
 const App: React.FC = () => {
   return (
     <>
-      <Home /> <Main />
+      <Home /> <Main /> <Projects />
     </>
   );
 };

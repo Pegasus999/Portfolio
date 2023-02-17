@@ -7,7 +7,7 @@ interface Props {
 }
 const Scroll: React.FC<Props> = ({ page }) => {
   function HandleScroll() {
-    const Target = document.getElementById(page === 1 ? "skills" : "Projects");
+    const Target = document.getElementById(page === 1 ? "skills" : "projects");
     if (Target) Target.scrollIntoView({ behavior: "smooth" });
   }
 

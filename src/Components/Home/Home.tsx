@@ -3,7 +3,7 @@ import { Wrapper } from "./styles";
 import NavBar from "../NavBar/NavBar";
 import About from "./About/About";
 import Talk from "./Talk/Talk";
-import Scroll from "./Scroll/Scroll";
+import Scroll from "../Scroll/Scroll";
 
 const Home: React.FC = () => {
   return (
@@ -17,3 +17,5 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
+// Add animation on the into text , from the website of animations

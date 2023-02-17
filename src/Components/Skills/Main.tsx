@@ -1,6 +1,6 @@
-import Scroll from "../../Home/Scroll/Scroll";
-import NavBar from "../../NavBar/NavBar";
-import Skill from "../Skill/Skill";
+import Scroll from "../Scroll/Scroll";
+import NavBar from "../NavBar/NavBar";
+import Skill from "./Skill/Skill";
 import { Wrapper } from "./styles";
 
 const Main: React.FC = () => {
