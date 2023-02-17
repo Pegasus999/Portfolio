@@ -15,8 +15,8 @@ interface props {
 }
 const NavBar: React.FC<props> = ({ scrolled, page }) => {
   function HandleScroll(id: string) {
-    const About = document.getElementById(id);
-    if (About) About.scrollIntoView({ behavior: "smooth" });
+    const Target = document.getElementById(id);
+    if (Target) Target.scrollIntoView({ behavior: "smooth" });
   }
 
   return (

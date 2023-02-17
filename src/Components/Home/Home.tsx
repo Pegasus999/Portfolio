@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       <NavBar scrolled={false} />
       <About />
       <Talk />
-      <Scroll />
+      <Scroll page={1} />
     </Wrapper>
   );
 };
