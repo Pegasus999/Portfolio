@@ -1,4 +1,22 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
+import {
+  blurIn,
+  centerToLeft,
+  centerToRight,
+  leftIn,
+  leftOut,
+  leftToCenter,
+  rightIn,
+  rightOut,
+  rightToCenter,
+  textIn,
+} from "./animation";
+interface Props {
+  focused: number;
+  Id: number;
+  animate: boolean;
+  caller: number;
+}
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -26,6 +44,7 @@ export const CarouselHolder = styled.div`
   align-items: center;
   padding: 20px;
   overflow: hidden;
+  animation: ${blurIn} 1s ease-in-out;
 `;
 
 export const TextHolder = styled.div`
@@ -35,14 +54,17 @@ export const TextHolder = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  animation: ${blurIn} 1s ease-in-out;
 `;
 
-interface Props {
-  focused: number;
-  Id: number;
-  animate: boolean;
-  caller: number;
-}
+export const Text = styled.p`
+  font-family: "Poppins", "sans serif";
+  font-weight: 400;
+  color: var(--white);
+  font-size: 20px;
+  animation: ${textIn} 1s ease-in-out;
+`;
+
 export const Carousel = styled.div`
   width: 100%;
   height: 100%;
@@ -68,65 +90,6 @@ function leftPositioning(props: Props) {
   else if (props.focused > props.Id) return "-200%";
 }
 
-const centerToRight = keyframes`
-  from{
-  }
-  to{
-    transform: translate(110%) Scale(70%)
-  }
-`;
-
-const centerToLeft = keyframes`
-  from{
-  }
-  to{
-    transform: translate(-110%) Scale(70%)
-  }
-`;
-
-const rightToCenter = keyframes`
-  from{
-  }
-  to{
-    transform: translate(-110%) Scale(100%);
-    filter: unset;
-  }
-`;
-
-const leftToCenter = keyframes`
-  from{
-  }
-  to{
-    transform: translate(110%) Scale(100%);
-    filter: unset
-  }
-`;
-
-const leftOut = keyframes`
-  from{}
-  to{
-    transform: translate(-60%) Scale(70%)
-  }
-`;
-const rightOut = keyframes`
-  from{}
-  to{
-    transform: translate(60%) Scale(70%)
-  }
-`;
-
-const leftIn = keyframes`
-  from{}
-  to{
-    transform: translate(340%) Scale(70%)
-  }
-`;
-const rightIn = keyframes`
-  from{}
-  to{
-    transform: translate(-340%) Scale(70%)
-  }
-`;
 let way = "ease-in-out";
 export const CarouselItem = styled.div<Props>`
   width: 50%;

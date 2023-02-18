@@ -3,17 +3,21 @@ import {
   Carousel,
   CarouselHolder,
   CarouselItem,
+  Text,
   TextHolder,
   Wrapper,
 } from "./styles";
 import { Container } from "./styles";
-// make a state where u store the id of the item being focus , every item has an id obviously , if the id <= 1 then no left item , if id < 4 then there is left and right item blurred which are id - 1 and id + 1
-// and when id is 4 there is no left item GOOD LUCK TMRW king
+
 const ShowRoom: React.FC = () => {
   const [focused, setFocused] = useState<number>(0);
   const [caller, setCaller] = useState<number>(0);
   const [animate, setAnimate] = useState<boolean>(false);
 
+  const text = [
+    "This is some random description used as a placeholder for the projects descriptions HEHE",
+    "This is some random description used as a placeholder for the projects descriptions JIJI",
+  ];
   function handleClick(id: number) {
     setCaller(id);
     setAnimate(true);
@@ -65,7 +69,9 @@ const ShowRoom: React.FC = () => {
             </CarouselItem>
           </Carousel>
         </CarouselHolder>
-        <TextHolder>hehe</TextHolder>
+        <TextHolder>
+          <Text>{text[focused]}</Text>
+        </TextHolder>
       </Container>
     </Wrapper>
   );
