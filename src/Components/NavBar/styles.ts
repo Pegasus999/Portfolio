@@ -19,7 +19,7 @@ interface Props {
   stretch: boolean;
 }
 export const TitleContainer = styled.div<Props>`
-  flex: ${(props) => (props.stretch ? "1" : "1.75")};
+  flex: ${(props) => (props.stretch ? "1" : "1.7")};
   height: 100%;
   display: flex;
   justify-content: flex-start;

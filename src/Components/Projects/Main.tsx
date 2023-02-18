@@ -5,10 +5,8 @@ import { Footer, FooterWrapper, Link, Wrapper } from "./styles";
 
 const Projects: React.FC = () => {
   function handleClick() {
-    setTimeout(() => {
-      let talk = document.getElementById("AboutMe");
-      if (talk) talk.scrollIntoView({ behavior: "smooth" });
-    }, 1000);
+    let talk = document.getElementById("AboutMe");
+    if (talk) talk.scrollIntoView({ behavior: "smooth" });
   }
   return (
     <Wrapper id="projects">

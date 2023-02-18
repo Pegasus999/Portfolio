@@ -41,17 +41,17 @@ const NavBar: React.FC<props> = ({ scrolled, page }) => {
         <LinksContainer>
           <Link
             onClick={() => {
-              HandleScroll("skills");
-            }}
-          >
-            Skills
-          </Link>
-          <Link
-            onClick={() => {
               HandleScroll("projects");
             }}
           >
             Projects
+          </Link>
+          <Link
+            onClick={() => {
+              HandleScroll("skills");
+            }}
+          >
+            Skills
           </Link>
           <Link
             onClick={() => {
