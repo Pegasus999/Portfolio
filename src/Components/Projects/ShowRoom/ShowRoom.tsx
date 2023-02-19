@@ -3,6 +3,7 @@ import {
   Carousel,
   CarouselHolder,
   CarouselItem,
+  PlaceHolder,
   Text,
   TextHolder,
   Wrapper,
@@ -38,7 +39,17 @@ const ShowRoom: React.FC = () => {
               focused={focused}
               onClick={() => handleClick(0)}
             >
-              1
+              {focused === 0 ? (
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/DuxmhoWIMOA"
+                  title="Project : PegaTv ShowCase"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+              ) : (
+                <PlaceHolder>Project 1</PlaceHolder>
+              )}
             </CarouselItem>
             <CarouselItem
               Id={1}
@@ -47,7 +58,17 @@ const ShowRoom: React.FC = () => {
               focused={focused}
               onClick={() => handleClick(1)}
             >
-              2
+              {focused === 1 ? (
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/VqXoUcxPv6A"
+                  title="Project : PegaTv App ShowCase"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+              ) : (
+                <PlaceHolder>Project 2</PlaceHolder>
+              )}
             </CarouselItem>
             <CarouselItem
               Id={2}
@@ -56,16 +77,17 @@ const ShowRoom: React.FC = () => {
               focused={focused}
               onClick={() => handleClick(2)}
             >
-              3
-            </CarouselItem>
-            <CarouselItem
-              Id={3}
-              caller={caller}
-              animate={animate}
-              focused={focused}
-              onClick={() => handleClick(3)}
-            >
-              4
+              {focused === 2 ? (
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/ZOFIxfhR2tc"
+                  title="Project : SellPoint inventory management"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+              ) : (
+                <PlaceHolder>Project 3</PlaceHolder>
+              )}
             </CarouselItem>
           </Carousel>
         </CarouselHolder>

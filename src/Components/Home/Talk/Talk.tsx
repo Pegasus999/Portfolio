@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import {
-  AiFillGithub,
-  AiOutlineWhatsApp,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiOutlineWhatsApp, AiFillLinkedin } from "react-icons/ai";
+import { BsTwitter } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import {
   BigCircle,
@@ -27,7 +24,12 @@ export interface Icon {
   prev: position;
   next: position;
 }
-const Talk: React.FC = () => {
+
+interface Props {
+  popUp: Function;
+  email: Function;
+}
+const Talk: React.FC<Props> = ({ popUp, email }) => {
   const top: position = { top: "-40px" };
   const right: position = { right: "-40px" };
   const left: position = { left: "-40px" };
@@ -57,18 +59,28 @@ const Talk: React.FC = () => {
     prev: left,
     next: right,
   };
-  // add a property in both the layout and the positions , called by the position , so if top already has left and bottom ( add name:top) in order for you to be able to compare by value and not refrence ,
   const [gmail, setGmail] = useState<Icon>(layoutTop);
-  const [github, setGithub] = useState<Icon>(layoutLeft);
+  const [twitter, setTwitter] = useState<Icon>(layoutBottom);
   const [linkin, setLinkin] = useState<Icon>(layoutRight);
-  const [whatsapp, setWhatsapp] = useState<Icon>(layoutBottom);
+  const [whatsapp, setWhatsapp] = useState<Icon>(layoutLeft);
   const [caller, setCaller] = useState<string>(layoutLeft.current);
   const [animate, setAnimate] = useState<boolean>(false);
 
   function rotate(circle: Icon) {
     setCaller(circle.current);
     if (circle.current === "top") {
-      console.log("execute");
+      if (whatsapp.current === circle.current) {
+        popUp();
+      } else if (twitter.current === circle.current) {
+        window.open("https://twitter.com/Pegas_Dev", "_blank");
+      } else if (linkin.current === circle.current) {
+        window.open(
+          "https://www.linkedin.com/in/adem-zoghmar-831064267/",
+          "_blank"
+        );
+      } else if (gmail.current === circle.current) {
+        email();
+      }
     } else if (circle.current === "left") {
       moveRight();
     } else if (circle.current === "right") {
@@ -98,7 +110,7 @@ const Talk: React.FC = () => {
   function moveRight() {
     setAnimate(true);
     setTimeout(() => {
-      setGithub(findPosition(github, "next"));
+      setTwitter(findPosition(twitter, "next"));
       setGmail(findPosition(gmail, "next"));
       setLinkin(findPosition(linkin, "next"));
       setWhatsapp(findPosition(whatsapp, "next"));
@@ -108,7 +120,7 @@ const Talk: React.FC = () => {
   function moveLeft() {
     setAnimate(true);
     setTimeout(() => {
-      setGithub(findPosition(github, "prev"));
+      setTwitter(findPosition(twitter, "prev"));
       setGmail(findPosition(gmail, "prev"));
       setLinkin(findPosition(linkin, "prev"));
       setWhatsapp(findPosition(whatsapp, "prev"));
@@ -122,12 +134,12 @@ const Talk: React.FC = () => {
         <CircleHolder>
           <BigCircle>
             <SmallCircle
-              current={github.current_position}
+              current={twitter.current_position}
               caller={caller}
               animate={animate}
-              onClick={() => rotate(github)}
+              onClick={() => rotate(twitter)}
             >
-              <AiFillGithub />
+              <BsTwitter />
             </SmallCircle>
           </BigCircle>
           <BigCircle>

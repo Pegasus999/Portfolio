@@ -102,7 +102,7 @@ export const CarouselItem = styled.div<Props>`
   align-items: center;
   right: ${(props) => rightPositioning(props)};
   left: ${(props) => leftPositioning(props)};
-  background-color: white;
+  background-color: var(--white);
   filter: ${(props) => (props.focused === props.Id ? "unset" : "blur(5px)")};
   transform: ${(props) => Scale(props)};
   animation: ${(props) => (props.animate ? handleAnimation(props) : "none")} 1s
@@ -126,8 +126,6 @@ function handleAnimation(props: Props) {
       : props.focused === props.caller - 1
       ? "right"
       : "center";
-
-  console.log(props.Id, caller, position);
 
   if (position === "left" && caller === "left") {
     return leftToCenter;
@@ -155,3 +153,16 @@ function handleAnimation(props: Props) {
   }
   return "none";
 }
+
+export const PlaceHolder = styled.div`
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--night);
+  font-family: "Poppins", "sans serif";
+`;
