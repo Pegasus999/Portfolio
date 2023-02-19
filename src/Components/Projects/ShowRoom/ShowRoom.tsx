@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { BsGithub } from "react-icons/bs";
 import {
   Carousel,
   CarouselHolder,
   CarouselItem,
+  IconHolder,
   PlaceHolder,
   Text,
   TextHolder,
@@ -30,6 +32,14 @@ const ShowRoom: React.FC = () => {
   return (
     <Wrapper>
       <Container>
+        <IconHolder>
+          <BsGithub
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              window.open("https://github.com/Pegasus999", "_blank");
+            }}
+          />
+        </IconHolder>
         <CarouselHolder>
           <Carousel>
             <CarouselItem

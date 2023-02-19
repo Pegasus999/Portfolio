@@ -49,7 +49,7 @@ export const CarouselHolder = styled.div`
 
 export const TextHolder = styled.div`
   width: 100%;
-  height: 20%;
+  height: 15%;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -165,4 +165,15 @@ export const PlaceHolder = styled.div`
   align-items: center;
   background-color: var(--night);
   font-family: "Poppins", "sans serif";
+`;
+
+export const IconHolder = styled.div`
+  width: 100%;
+  height: 5%;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  opacity: 0.4;
+  align-items: center;
 `;
