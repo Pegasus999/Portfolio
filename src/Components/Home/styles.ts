@@ -108,7 +108,7 @@ export const QrHolder = styled.div`
 
 export const Image = styled.img``;
 
-export const EmailFormContainer = styled.div<popUp>`
+export const EmailFormContainer = styled.form<popUp>`
   width: 50%;
   height: 70%;
   background-color: var(--lessdark);
@@ -138,7 +138,7 @@ export const Email = styled.h3`
   color: var(--white);
   opacity: 0.8;
   padding-left: 20px;
-  margin-left: 60px;
+  margin-left: 64px;
 `;
 export const Label = styled.label`
   font-size: 20px;
@@ -154,7 +154,7 @@ export const SubjectHolder = styled(EmailHolder)`
 export const Subject = styled.input`
   width: 600px;
   height: 50px;
-  margin-left: 20px;
+  margin-left: 23px;
   border-radius: 16px;
   padding: 16px;
   background-color: var(--lessdark);
@@ -205,4 +205,30 @@ export const Button = styled.button`
     background-color: var(--yellow);
     color: var(--lessdark);
   }
+`;
+
+const easeinanimation = keyframes`
+  0%{
+    left: -100px;
+  }
+  100%{
+    left: 20px;
+  }
+`;
+interface color {
+  color?: string;
+}
+export const Toast = styled.div<color>`
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: fit-content;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+  background-color: ${(props) => (props.color ? props.color : "var(--yellow)")};
+  color: var(--lessdark);
+  z-index: 30;
+  animation: ${easeinanimation} 0.4s;
+  cursor: default;
 `;
