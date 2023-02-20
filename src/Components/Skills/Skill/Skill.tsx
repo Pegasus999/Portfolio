@@ -74,37 +74,15 @@ const Skill: React.FC = () => {
               <>
                 <Header>Front-end :</Header>
                 <Paragraph>
-                  so when it comes to front end apart from the obvious ability
-                  that i'm willing to learn any language or framework, but i'm
-                  most comfortable and knowledgable in javascript / Typescript,
-                  so here are some of the technologies i worked with :
-                </Paragraph>{" "}
+                  when it comes to Front-end, apart from the will and ability to
+                  learn anything here are some of the technologies i work with:
+                </Paragraph>
                 <ListContainer>
                   <List>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
+                    <ListItem>ReactJS / native</ListItem>
+                    <ListItem>Javascript/TypeScript</ListItem>
+                    <ListItem>Electron</ListItem>
+                    <ListItem>Flutter</ListItem>
                   </List>
                 </ListContainer>
               </>
@@ -112,37 +90,15 @@ const Skill: React.FC = () => {
               <>
                 <Header>Back-end :</Header>
                 <Paragraph>
-                  so when it comes to front end apart from the obvious ability
-                  that i'm willing to learn any language or framework, but i'm
-                  most comfortable and knowledgable in javascript / Typescript,
-                  so here are some of the technologies i worked with :
+                  when it comes to Back-end, apart from the will and ability to
+                  learn anything here are some of the technologies i work with:
                 </Paragraph>
                 <ListContainer>
                   <List>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
-                    <ListItem>
-                      Framework : some discreption for each thing
-                    </ListItem>
+                    <ListItem>NodeJs</ListItem>
+                    <ListItem>Postgresql/MySQL</ListItem>
+                    <ListItem>php</ListItem>
+                    <ListItem>Prisma/Sequelize</ListItem>
                   </List>
                 </ListContainer>
               </>

@@ -135,6 +135,7 @@ export const EmailHolder = styled.div`
 export const Email = styled.h3`
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+  width: 72%;
   color: var(--white);
   opacity: 0.8;
   padding-left: 20px;
@@ -152,7 +153,7 @@ export const SubjectHolder = styled(EmailHolder)`
   align-items: center;
 `;
 export const Subject = styled.input`
-  width: 600px;
+  width: 72%;
   height: 50px;
   margin-left: 23px;
   border-radius: 16px;
@@ -172,7 +173,7 @@ export const BodyHolder = styled(EmailHolder)`
 export const Body = styled.textarea`
   height: 300px;
   vertical-align: top;
-  width: 595px;
+  width: 72%;
   padding: 16px;
   border-radius: 16px;
   background-color: var(--lessdark);

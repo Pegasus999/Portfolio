@@ -18,8 +18,9 @@ const ShowRoom: React.FC = () => {
   const [animate, setAnimate] = useState<boolean>(false);
 
   const text = [
-    "This is some random description used as a placeholder for the projects descriptions HEHE",
-    "This is some random description used as a placeholder for the projects descriptions JIJI",
+    "A website to watch Movies/Tv Shows online",
+    "An flutter app to watch Movies/Tv Shows online",
+    "A desktop app used in supermarkets and sell points in checkouts",
   ];
   function handleClick(id: number) {
     setCaller(id);

@@ -13,10 +13,10 @@ const About: React.FC = () => {
     <Wrapper>
       <Container>
         <IntroContainer>
-          <Welcome>Hi! I'm Adem</Welcome>
+          <Welcome>Hi! i'm Adem</Welcome>
           <Intro>
-            Hello there motherfuckers i'm just trying to make place holder text
-            here over here so i can style the page properly
+            i'm a software engineer & full-stack developer, you request
+            something and i build it
           </Intro>
         </IntroContainer>
         <ImageContainer>

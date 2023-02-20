@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+  flex-wrap: wrap-reverse;
   background-color: var(--lessdark);
   border-radius: 16px;
   display: flex;
