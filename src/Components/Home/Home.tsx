@@ -111,6 +111,14 @@ const Home: React.FC = () => {
     }, 500);
   }
 
+  function handleCopyClick() {
+    const textToCopy = "(+213)556966758";
+    navigator.clipboard.writeText(textToCopy);
+  }
+
+  function handleEmailClick() {
+    window.location.href = `mailto:pegadev420@gmail.com`;
+  }
   return (
     <>
       <Wrapper id="AboutMe">
@@ -191,10 +199,7 @@ const Home: React.FC = () => {
             <MobileWrapper>
               <MobileContainer>
                 <MobileImageContainer>
-                  <Img
-                    src={require("../../Assests/death.png")}
-                    alt="gay person eheh"
-                  />
+                  <Img src={require("../../Assests/death.png")} />
                 </MobileImageContainer>
                 <IntroContainer>
                   <Welcome>Hi! i'm Adem</Welcome>
@@ -208,16 +213,31 @@ const Home: React.FC = () => {
             <ContactWrapper>
               <ContactContainer>
                 <CircleHolder>
-                  <Circle>
+                  <Circle
+                    onClick={() => {
+                      handleEmailClick();
+                    }}
+                  >
                     <SiGmail />
                   </Circle>
-                  <Circle>
+                  <Circle
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/adem-zoghmar-831064267/",
+                        "_blank"
+                      )
+                    }
+                  >
                     <AiFillLinkedin />
                   </Circle>
-                  <Circle>
+                  <Circle onClick={() => handleCopyClick()}>
                     <AiOutlineWhatsApp />
                   </Circle>
-                  <Circle>
+                  <Circle
+                    onClick={() =>
+                      window.open("https://twitter.com/Pegas_Dev", "_blank")
+                    }
+                  >
                     <BsTwitter />
                   </Circle>
                 </CircleHolder>
