@@ -49,6 +49,9 @@ export const TitleContainer = styled.div`
   border-radius: 1rem;
   display: flex;
   text-align: center;
+  overflow-y: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--lessdark);
@@ -73,8 +76,22 @@ interface Ani {
 export const Title = styled.h1<Ani>`
   font-family: "Poppins", "sans serif";
   font-weight: bold;
-  font-size: 6.25rem;
+  @media (min-width: 768px) {
+    font-size: 6.25rem;
+  }
+  font-size: 4rem;
   opacity: ${(props) => (props.fixed ? "0" : "1")};
   color: var(--yellow);
   animation: ${(props) => (props.fixed ? blurOut : "none")} 1s ease-in-out;
+`;
+
+export const ShowCase = styled.div`
+  min-height: 40%;
+  margin: 3rem;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;

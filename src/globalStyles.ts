@@ -8,22 +8,13 @@ export const GlobalStyles = createGlobalStyle`
       scroll-behavior: smooth;
       
       font-family: 'Arvo', serif;
-      ::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 4px;
-      }
-      
-      ::-webkit-scrollbar-thumb {
-        border-radius: 4px;
-        background: #888;
-      }
+     ::-webkit-scrollbar {
+    width: 1px;
+    }
+
 	  }
     body {
-      overflow: hidden;
+       overflow: hidden; 
       background-color: var(--night);
     }
     :root {

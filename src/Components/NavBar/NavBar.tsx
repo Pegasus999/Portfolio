@@ -1,22 +1,33 @@
+import { useState } from "react";
 import {
   Container,
+  DropDown,
   Icon,
   IconContainer,
   Link,
   LinksContainer,
   Logo,
+  MenuContainer,
   TitleContainer,
   Wrapper,
 } from "./styles";
 import { BsChevronDoubleUp } from "react-icons/bs";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 interface props {
   scrolled: boolean;
   page?: number;
 }
 const NavBar: React.FC<props> = ({ scrolled, page }) => {
+  const [dropdown, setDropdown] = useState<boolean>(false);
+
   function HandleScroll(id: string) {
+    setDropdown(false);
     const Target = document.getElementById(id);
     if (Target) Target.scrollIntoView({ behavior: "smooth" });
+  }
+  function openDropDown() {
+    setDropdown(!dropdown);
   }
 
   return (
@@ -39,28 +50,65 @@ const NavBar: React.FC<props> = ({ scrolled, page }) => {
           </IconContainer>
         )}
         <LinksContainer>
-          <Link
-            onClick={() => {
-              HandleScroll("projects");
-            }}
-          >
-            Projects
-          </Link>
-          <Link
-            onClick={() => {
-              HandleScroll("skills");
-            }}
-          >
-            Skills
-          </Link>
-          <Link
-            onClick={() => {
-              HandleScroll("AboutMe");
-            }}
-          >
-            About me
-          </Link>
+          {!window.matchMedia("(max-width: 768px").matches ? (
+            <>
+              <Link
+                onClick={() => {
+                  HandleScroll("projects");
+                }}
+              >
+                Projects
+              </Link>
+              <Link
+                onClick={() => {
+                  HandleScroll("skills");
+                }}
+              >
+                Skills
+              </Link>
+              <Link
+                onClick={() => {
+                  HandleScroll("AboutMe");
+                }}
+              >
+                About me
+              </Link>
+            </>
+          ) : (
+            <>
+              <MenuContainer>
+                <GiHamburgerMenu
+                  onClick={() => openDropDown()}
+                ></GiHamburgerMenu>
+              </MenuContainer>
+            </>
+          )}
         </LinksContainer>
+        {dropdown && (
+          <DropDown>
+            <Link
+              onClick={() => {
+                HandleScroll("projects");
+              }}
+            >
+              Projects
+            </Link>
+            <Link
+              onClick={() => {
+                HandleScroll("skills");
+              }}
+            >
+              Skills
+            </Link>
+            <Link
+              onClick={() => {
+                HandleScroll("AboutMe");
+              }}
+            >
+              About me
+            </Link>
+          </DropDown>
+        )}
       </Container>
     </Wrapper>
   );

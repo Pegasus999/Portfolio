@@ -141,8 +141,6 @@ const Talk: React.FC<Props> = ({ popUp, email }) => {
             >
               <BsTwitter />
             </SmallCircle>
-          </BigCircle>
-          <BigCircle>
             <SmallCircle
               current={gmail.current_position}
               caller={caller}
@@ -151,8 +149,6 @@ const Talk: React.FC<Props> = ({ popUp, email }) => {
             >
               <SiGmail />
             </SmallCircle>
-          </BigCircle>
-          <BigCircle>
             <SmallCircle
               current={linkin.current_position}
               caller={caller}
@@ -161,8 +157,6 @@ const Talk: React.FC<Props> = ({ popUp, email }) => {
             >
               <AiFillLinkedin />
             </SmallCircle>
-          </BigCircle>
-          <BigCircle>
             <SmallCircle
               current={whatsapp.current_position}
               caller={caller}

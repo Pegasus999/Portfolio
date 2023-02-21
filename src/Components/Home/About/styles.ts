@@ -19,7 +19,10 @@ export const IntroContainer = styled.div`
   flex: 3;
   padding: 25px;
   display: flex;
-  justify-content: flex-end;
+  @media (min-width: 768px) {
+    justify-content: flex-end;
+  }
+
   align-items: center;
   flex-direction: column;
   border-top-left-radius: 16px;
@@ -37,34 +40,48 @@ export const ImageContainer = styled.div`
 `;
 
 export const Welcome = styled.div`
-  font-size: 3rem;
-  width: 100%;
-  /* background-color: red; */
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  text-align: start;
+  @media (min-width: 768px) {
+    font-size: 3rem;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: start;
+    font-weight: 600;
+    padding: 5px 40px;
+    color: var(--yellow);
+    font-family: "Poppins", sans-serif;
+    flex: 1;
+    user-select: none;
+  }
+  font-size: 2rem;
   font-weight: 600;
-  padding: 5px 40px;
   color: var(--yellow);
   font-family: "Poppins", sans-serif;
-  flex: 1;
-  user-select: none;
 `;
 
 export const Intro = styled.div`
-  font-size: 1rem;
-  color: var(--white);
-  width: 100%;
-  flex: 1;
-  /* background-color: blue; */
-  padding: 15px 15px 15px 40px;
-  display: flex;
-  align-items: flex-start;
-  text-align: start;
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    color: var(--white);
+    width: 100%;
+    flex: 1;
+    /* background-color: blue; */
+    padding: 15px 15px 15px 40px;
+    display: flex;
+    align-items: flex-start;
+    text-align: start;
+    font-weight: 400;
+    user-select: none;
+    font-family: "Poppins", sans-serif;
+  }
+  font-size: 1.2rem;
+  margin-top: 1rem;
   font-weight: 400;
-  user-select: none;
+  text-align: center;
   font-family: "Poppins", sans-serif;
+  color: var(--white);
 `;
 
 export const Image = styled.img`

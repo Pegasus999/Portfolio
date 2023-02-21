@@ -25,8 +25,26 @@ import NavBar from "../NavBar/NavBar";
 import About from "./About/About";
 import Talk from "./Talk/Talk";
 import Scroll from "../Scroll/Scroll";
-import { AiOutlineClose } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiOutlineClose,
+  AiOutlineWhatsApp,
+} from "react-icons/ai";
 import emailjs from "@emailjs/browser";
+import {
+  Circle,
+  CircleHolder,
+  ContactContainer,
+  ContactWrapper,
+  Img,
+  MobileContainer,
+  MobileImageContainer,
+  MobileWrapper,
+} from "./mobilestyles";
+import { Intro, IntroContainer, Welcome } from "./About/styles";
+import { SiGmail } from "react-icons/si";
+import { BsTwitter } from "react-icons/bs";
+
 interface toast {
   isError: boolean;
   message: string;
@@ -98,71 +116,117 @@ const Home: React.FC = () => {
       <Wrapper id="AboutMe">
         <NavBar scrolled={false} />
 
-        <About />
-        <Talk popUp={popUpHandler} email={emailing} />
-        {toast && (
-          <Toast color={toast.isError ? "red" : ""}>{toast.message}</Toast>
+        {!window.matchMedia("(max-width: 768px").matches ? (
+          <>
+            <About />
+            <Talk popUp={popUpHandler} email={emailing} />
+            {toast && (
+              <Toast color={toast.isError ? "red" : ""}>{toast.message}</Toast>
+            )}
+
+            {popUp && (
+              <PopUpWrapper>
+                <PopUpContainer animate={animate}>
+                  <IconHolder>
+                    <Title>WhatsApp</Title>
+                    <Icon>
+                      <AiOutlineClose onClick={() => handleClick()} />
+                    </Icon>
+                  </IconHolder>
+                  <NumberHolder>(+213) 556 99 67 58</NumberHolder>
+                  <QrHolder>
+                    <Image src={require("../../Assests/whatsapp.png")} />
+                  </QrHolder>
+                </PopUpContainer>
+              </PopUpWrapper>
+            )}
+            {email && (
+              <PopUpWrapper>
+                <EmailFormContainer
+                  animate={animate}
+                  onSubmit={(e) => sendEmail(e)}
+                >
+                  <IconHolder>
+                    <Title>Email</Title>
+                    <Icon>
+                      <AiOutlineClose onClick={() => emailHandler()} />
+                    </Icon>
+                  </IconHolder>
+                  <EmailHolder>
+                    <Label>To:</Label>
+                    <Email>pegadev420@gmail.com</Email>
+                  </EmailHolder>
+                  <SubjectHolder>
+                    <Label>From :</Label>
+                    <Subject
+                      style={{ marginLeft: "46px" }}
+                      onChange={(e) => setFrom(e.target.value)}
+                      type="email"
+                      name="email"
+                      required
+                    />
+                  </SubjectHolder>
+                  <SubjectHolder>
+                    <Label>Subject :</Label>
+                    <Subject
+                      onChange={(e) => setSubject(e.target.value)}
+                      type="text"
+                      name="name"
+                      required
+                    />
+                  </SubjectHolder>
+                  <BodyHolder>
+                    <Label>Message :</Label>
+                    <Body onChange={(e) => setBody(e.target.value)} required />
+                  </BodyHolder>
+                  <ButtonHolder>
+                    <Button type="submit">Send</Button>
+                  </ButtonHolder>
+                </EmailFormContainer>
+              </PopUpWrapper>
+            )}
+          </>
+        ) : (
+          <>
+            <MobileWrapper>
+              <MobileContainer>
+                <MobileImageContainer>
+                  <Img
+                    src={require("../../Assests/death.png")}
+                    alt="gay person eheh"
+                  />
+                </MobileImageContainer>
+                <IntroContainer>
+                  <Welcome>Hi! i'm Adem</Welcome>
+                  <Intro>
+                    i'm a software engineer & full-stack developer, you request
+                    something and i build it
+                  </Intro>
+                </IntroContainer>
+              </MobileContainer>
+            </MobileWrapper>
+            <ContactWrapper>
+              <ContactContainer>
+                <CircleHolder>
+                  <Circle>
+                    <SiGmail />
+                  </Circle>
+                  <Circle>
+                    <AiFillLinkedin />
+                  </Circle>
+                  <Circle>
+                    <AiOutlineWhatsApp />
+                  </Circle>
+                  <Circle>
+                    <BsTwitter />
+                  </Circle>
+                </CircleHolder>
+              </ContactContainer>
+            </ContactWrapper>
+          </>
         )}
         <Scroll page={1} />
       </Wrapper>
-      {popUp && (
-        <PopUpWrapper>
-          <PopUpContainer animate={animate}>
-            <IconHolder>
-              <Title>WhatsApp</Title>
-              <Icon>
-                <AiOutlineClose onClick={() => handleClick()} />
-              </Icon>
-            </IconHolder>
-            <NumberHolder>(+213) 556 99 67 58</NumberHolder>
-            <QrHolder>
-              <Image src={require("../../Assests/whatsapp.png")} />
-            </QrHolder>
-          </PopUpContainer>
-        </PopUpWrapper>
-      )}
-      {email && (
-        <PopUpWrapper>
-          <EmailFormContainer animate={animate} onSubmit={(e) => sendEmail(e)}>
-            <IconHolder>
-              <Title>Email</Title>
-              <Icon>
-                <AiOutlineClose onClick={() => emailHandler()} />
-              </Icon>
-            </IconHolder>
-            <EmailHolder>
-              <Label>To:</Label>
-              <Email>pegadev420@gmail.com</Email>
-            </EmailHolder>
-            <SubjectHolder>
-              <Label>From :</Label>
-              <Subject
-                style={{ marginLeft: "46px" }}
-                onChange={(e) => setFrom(e.target.value)}
-                type="email"
-                name="email"
-                required
-              />
-            </SubjectHolder>
-            <SubjectHolder>
-              <Label>Subject :</Label>
-              <Subject
-                onChange={(e) => setSubject(e.target.value)}
-                type="text"
-                name="name"
-                required
-              />
-            </SubjectHolder>
-            <BodyHolder>
-              <Label>Message :</Label>
-              <Body onChange={(e) => setBody(e.target.value)} required />
-            </BodyHolder>
-            <ButtonHolder>
-              <Button type="submit">Send</Button>
-            </ButtonHolder>
-          </EmailFormContainer>
-        </PopUpWrapper>
-      )}
     </>
   );
 };

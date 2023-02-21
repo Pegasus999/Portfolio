@@ -14,25 +14,26 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
+  position: relative;
 `;
 interface Props {
   stretch: boolean;
 }
 export const TitleContainer = styled.div<Props>`
-  flex: ${(props) => (props.stretch ? "1" : "1.7")};
+  width: 50%;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: center;
-  padding: 0.313rem;
   user-select: none;
 `;
 
 export const LinksContainer = styled.div`
-  flex: 1;
+  width: 50%;
   padding: 1.1rem;
   height: 100%;
   display: flex;
+
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
@@ -40,9 +41,11 @@ export const LinksContainer = styled.div`
 
 export const Logo = styled.img`
   user-select: none;
-  margin-left: 3.438rem;
-  padding: 0.625rem;
-  scale: 0.7;
+
+  @media (max-width: 768px) {
+    scale: 0.4;
+  }
+  scale: 0.6;
 `;
 
 export const Link = styled.a`
@@ -99,9 +102,36 @@ export const Icon = styled.div`
 `;
 
 export const IconContainer = styled.div`
-  flex: 1;
-  padding: 0.313rem;
+  @media (min-width: 768px) {
+    padding: 0.313rem;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const MenuContainer = styled.div`
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  color: var(--yellow);
+`;
+export const DropDown = styled.div`
+  position: absolute;
+  height: 12rem;
+  width: 100%;
+  z-index: 3;
+  background-color: var(--lessdark);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  bottom: -11rem;
 `;

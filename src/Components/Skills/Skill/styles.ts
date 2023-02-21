@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-interface Props {
+export interface Props {
   flip: boolean;
 }
 
@@ -44,7 +44,7 @@ export const SkillsContainer = styled.div`
   width: 100%;
   display: flex;
 `;
-const fade = keyframes`
+export const fade = keyframes`
   0%{
     opacity:0;
     transform: translateX(-9.375rem);
@@ -94,7 +94,7 @@ export const ListContainer = styled.div`
   margin-top: 1.25rem;
 `;
 
-const flip = keyframes`
+export const flip = keyframes`
   from{
    
   }
