@@ -5,13 +5,13 @@ export const rightTotop = keyframes`
       right:  unset;
 		transform: 
                rotate(0deg)
-		           translate(150px)
+		           translate(110px)
 		           rotate(0deg);
 	}
 	to {
       right:  unset;
 		transform: rotate(-90deg)
-		           translate(150px) 
+		           translate(110px) 
 		           rotate(90deg);
 	}
  `;
@@ -21,13 +21,13 @@ export const topToRight = keyframes`
       top:  unset;
 		transform: 
                rotate(0deg)
-		           translateY(-150px)
+		           translateY(-110px)
 		           rotate(0deg);
 	}
 	to {
       top:  unset;
 		transform: rotate(90deg)
-		           translateY(-150px) 
+		           translateY(-110px) 
 		           rotate(-90deg);
 	} `;
 
@@ -36,13 +36,13 @@ from {
       left:  unset;
 		transform: 
                rotate(0deg)
-		           translate(-150px)
+		           translate(-110px)
 		           rotate(0deg);
 	}
 	to {
       left:  unset;
 		transform: rotate(90deg)
-		           translate(-150px) 
+		           translate(-110px) 
 		           rotate(-90deg);
 	}
 `;
@@ -51,13 +51,13 @@ export const topToLeft = keyframes`
       top:  unset;
 		transform: 
                rotate(0deg)
-		           translateY(-150px)
+		           translateY(-110px)
 		           rotate(0deg);
 	}
 	to {
       top:  unset;
 		transform: rotate(-90deg)
-		           translateY(-150px) 
+		           translateY(-110px) 
 		           rotate(90deg);
 	}`;
 
@@ -66,13 +66,13 @@ from {
       right:  unset;
 		transform: 
                rotate(0deg)
-		           translate(150px)
+		           translate(110px)
 		           rotate(0deg);
 	}
 	to {
       right:  unset;
 		transform: rotate(90deg)
-		           translate(150px) 
+		           translate(110px) 
 		           rotate(-90deg);
 	}`;
 
@@ -81,13 +81,13 @@ export const bottomToLeft = keyframes`
       bottom:  unset;
 		transform: 
                rotate(0deg)
-		           translateY(150px)
+		           translateY(110px)
 		           rotate(0deg);
 	}
 	to {
       bottom:  unset;
 		transform: rotate(90deg)
-		           translateY(150px) 
+		           translateY(110px) 
 		           rotate(-90deg);
 	}
 `;
@@ -97,13 +97,13 @@ export const leftToBottom = keyframes`
       left:  unset;
 		transform: 
                rotate(0deg)
-		           translate(-150px)
+		           translate(-110px)
 		           rotate(0deg);
 	}
 	to {
       left:  unset;
 		transform: rotate(-90deg)
-		           translate(-150px) 
+		           translate(-110px) 
 		           rotate(90deg);
 	}
 `;
@@ -112,13 +112,13 @@ export const bottomToRight = keyframes`
       bottom:  unset;
 		transform: 
                rotate(0deg)
-		           translateY(150px)
+		           translateY(110px)
 		           rotate(0deg);
 	}
 	to {
       bottom:  unset;
 		transform: rotate(-90deg)
-		           translateY(150px) 
+		           translateY(110px) 
 		           rotate(90deg);
 	}
 `;

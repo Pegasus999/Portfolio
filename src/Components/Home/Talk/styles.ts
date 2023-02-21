@@ -10,10 +10,11 @@ import {
   topToLeft,
   topToRight,
 } from "./animation";
+
 export const Wrapper = styled.div`
   width: 100%;
-  height: 23%;
-  padding: 0 8px;
+  height: 25%;
+  padding: 4px 8px;
 `;
 
 export const Container = styled.div`
@@ -32,7 +33,7 @@ interface text {
 export const TextHolder = styled.div<text>`
   flex: 1;
   text-align: ${(props) => props.align};
-  font-size: 100px;
+  font-size: 60px;
   font-weight: bold;
   font-family: "Poppins", "sans serif";
   color: rgba(243, 243, 243, 0.2);
@@ -50,13 +51,13 @@ export const CircleHolder = styled.div`
 `;
 
 export const BigCircle = styled.div`
-  width: 300px;
+  width: 220px;
   position: absolute;
-  height: 300px;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: -150px;
+  bottom: -110px;
   border: 5px solid;
   border-radius: 50%;
 `;
@@ -66,13 +67,13 @@ interface Props {
   animate: boolean;
 }
 export const SmallCircle = styled.div<Props>`
-  width: 80px;
+  width: 56px;
   cursor: pointer;
-  height: 80px;
+  height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 27px;
   background-color: var(--yellow);
   border-radius: 50%;
   z-index: 1;

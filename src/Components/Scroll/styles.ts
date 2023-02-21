@@ -2,8 +2,8 @@ import styled, { keyframes } from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 12%;
-  padding: 16px 8px 0px 8px;
+  height: 15%;
+  padding: 4px 8px 0px 8px;
   /* background-color: red; */
 `;
 

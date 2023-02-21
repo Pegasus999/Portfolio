@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 60%;
-  padding: 16px 8px;
+  height: 50%;
+  padding: 4px 8px;
 `;
 
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  flex-wrap: wrap-reverse;
   background-color: var(--lessdark);
   border-radius: 16px;
   display: flex;
@@ -38,7 +37,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Welcome = styled.div`
-  font-size: 60px;
+  font-size: 40px;
   width: 100%;
   /* background-color: red; */
   display: flex;
@@ -54,7 +53,7 @@ export const Welcome = styled.div`
 `;
 
 export const Intro = styled.div`
-  font-size: 20px;
+  font-size: 15px;
   color: var(--white);
   width: 100%;
   flex: 1;
@@ -70,4 +69,5 @@ export const Intro = styled.div`
 
 export const Image = styled.img`
   user-select: none;
+  scale: 0.7;
 `;

@@ -2,8 +2,8 @@ import styled, { keyframes } from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 10%;
-  padding: 0 8px;
+  height: 15%;
+  padding: 0 8px 4px 8px;
 `;
 export const Container = styled.div`
   width: 100%;

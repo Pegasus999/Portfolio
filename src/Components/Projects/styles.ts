@@ -8,8 +8,8 @@ export const Wrapper = styled.div`
 `;
 export const FooterWrapper = styled.div`
   width: 100%;
-  height: 12%;
-  padding: 16px 8px 0px 8px;
+  height: 15%;
+  padding: 4px 8px 0px 8px;
 `;
 export const Footer = styled.div`
   height: 100%;

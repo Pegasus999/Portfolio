@@ -30,10 +30,10 @@ interface Props {
   email: Function;
 }
 const Talk: React.FC<Props> = ({ popUp, email }) => {
-  const top: position = { top: "-40px" };
-  const right: position = { right: "-40px" };
-  const left: position = { left: "-40px" };
-  const bottom: position = { bottom: "-40px" };
+  const top: position = { top: "-28px" };
+  const right: position = { right: "-28px" };
+  const left: position = { left: "-28px" };
+  const bottom: position = { bottom: "-28px" };
 
   const layoutRight: Icon = {
     current: "right",

@@ -22,7 +22,8 @@ export const GlobalStyles = createGlobalStyle`
         background: #888;
       }
 	  }
-    body {overflow:hidden;
+    body {
+      overflow: hidden;
       background-color: var(--night);
     }
     :root {

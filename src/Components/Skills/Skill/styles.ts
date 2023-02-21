@@ -5,9 +5,9 @@ interface Props {
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 90%;
+  height: 70%;
   max-height: 90%;
-  padding: 16px 8px 0px 8px;
+  padding: 4px 8px 4px 8px;
 `;
 
 export const Container = styled.div`
@@ -32,7 +32,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
   user-select: none;
   font-family: "Poppins", "sans-serif";
@@ -41,7 +41,6 @@ export const Title = styled.div`
 
 export const SkillsContainer = styled.div`
   height: 90%;
-
   width: 100%;
   display: flex;
 `;
@@ -74,18 +73,16 @@ export const Header = styled.h1`
 
 export const Paragraph = styled.p`
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 15px;
   overflow: auto;
   color: var(--white);
 `;
 
 export const List = styled.ul`
   list-style-position: inside;
-
-  max-height: 700px;
 `;
 export const ListItem = styled.li`
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px 0;
   font-weight: 500;
   color: var(--white);
@@ -125,4 +122,5 @@ export const Image = styled.img`
   border-radius: 16px;
   user-select: none;
   user-drag: none;
+  scale: 0.7;
 `;

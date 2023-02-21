@@ -1,8 +1,8 @@
 import styled, { keyframes } from "styled-components";
 
 export const Wrapper = styled.div`
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 `;
@@ -52,6 +52,7 @@ export const PopUpContainer = styled.div<popUp>`
   padding: 10px;
   animation: ${(props) => (props.animate ? exit : entrence)} 0.5s ease-in-out;
   z-index: 3;
+  gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +89,7 @@ export const Icon = styled.div`
 `;
 export const NumberHolder = styled.div`
   width: 100%;
-  flex: 0.5;
+  flex: 1;
   display: flex;
   font-family: "Poppins", sans-serif;
   justify-content: center;
@@ -100,9 +101,11 @@ export const NumberHolder = styled.div`
 
 export const QrHolder = styled.div`
   width: 100%;
-  flex: 2;
+  height: 70%;
+  flex: 1;
   display: flex;
   justify-content: center;
+  scale: 0.7;
   align-items: center;
 `;
 
@@ -110,7 +113,7 @@ export const Image = styled.img``;
 
 export const EmailFormContainer = styled.form<popUp>`
   width: 50%;
-  height: 70%;
+  height: fit-content;
   background-color: var(--lessdark);
   border-radius: 6px;
   display: flex;

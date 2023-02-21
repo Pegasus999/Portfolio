@@ -20,8 +20,8 @@ interface Props {
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 80%;
-  padding: 16px 8px 0px 8px;
+  height: 70%;
+  padding: 4px 8px 4px 8px;
 `;
 
 export const Container = styled.div`
@@ -49,7 +49,7 @@ export const CarouselHolder = styled.div`
 
 export const TextHolder = styled.div`
   width: 100%;
-  height: 15%;
+  height: 20%;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -93,7 +93,7 @@ function leftPositioning(props: Props) {
 let way = "ease-in-out";
 export const CarouselItem = styled.div<Props>`
   width: 50%;
-  height: 70%;
+  height: 80%;
   cursor: pointer;
   border-radius: 16px;
   position: absolute;
@@ -165,15 +165,4 @@ export const PlaceHolder = styled.div`
   align-items: center;
   background-color: var(--night);
   font-family: "Poppins", "sans serif";
-`;
-
-export const IconHolder = styled.div`
-  width: 100%;
-  height: 5%;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  opacity: 0.4;
-  align-items: center;
 `;
