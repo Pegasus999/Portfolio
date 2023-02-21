@@ -21,17 +21,17 @@ interface Props {
 export const Wrapper = styled.div`
   width: 100%;
   height: 70%;
-  padding: 4px 8px 4px 8px;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 `;
 
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 16px;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+
   align-items: center;
   background-color: var(--lessdark);
 `;
@@ -95,7 +95,7 @@ export const CarouselItem = styled.div<Props>`
   width: 50%;
   height: 80%;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 1rem;
   position: absolute;
   display: flex;
   justify-content: center;

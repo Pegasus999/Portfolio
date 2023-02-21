@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 export const FooterWrapper = styled.div`
   width: 100%;
   height: 15%;
-  padding: 4px 8px 0px 8px;
+  padding: 0.25rem 0.5rem 0px 0.5rem;
 `;
 export const Footer = styled.div`
   height: 100%;
@@ -18,15 +18,15 @@ export const Footer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 `;
 
 export const Link = styled.a`
   text-decoration: none;
   border-bottom: 1px solid;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   cursor: pointer;
   user-select: none;
@@ -40,13 +40,13 @@ export const Link = styled.a`
 export const TitleWrapper = styled.div`
   width: 100%;
   height: 80%;
-  padding: 16px 8px 0px 8px;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 `;
 
 export const TitleContainer = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 16px;
+  border-radius: 1rem;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -73,7 +73,7 @@ interface Ani {
 export const Title = styled.h1<Ani>`
   font-family: "Poppins", "sans serif";
   font-weight: bold;
-  font-size: 100px;
+  font-size: 6.25rem;
   opacity: ${(props) => (props.fixed ? "0" : "1")};
   color: var(--yellow);
   animation: ${(props) => (props.fixed ? blurOut : "none")} 1s ease-in-out;

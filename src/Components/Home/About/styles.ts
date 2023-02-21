@@ -19,7 +19,7 @@ export const IntroContainer = styled.div`
   flex: 3;
   padding: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   border-top-left-radius: 16px;
@@ -37,7 +37,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Welcome = styled.div`
-  font-size: 40px;
+  font-size: 4rem;
   width: 100%;
   /* background-color: red; */
   display: flex;
@@ -53,7 +53,7 @@ export const Welcome = styled.div`
 `;
 
 export const Intro = styled.div`
-  font-size: 15px;
+  font-size: 1.5rem;
   color: var(--white);
   width: 100%;
   flex: 1;
@@ -62,12 +62,13 @@ export const Intro = styled.div`
   display: flex;
   align-items: flex-start;
   text-align: start;
-  font-weight: 600;
+  font-weight: 400;
   user-select: none;
   font-family: "Poppins", sans-serif;
 `;
 
 export const Image = styled.img`
   user-select: none;
-  scale: 0.7;
+  width: 20rem;
+  max-width: 23rem;
 `;

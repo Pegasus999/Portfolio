@@ -3,13 +3,13 @@ import styled, { keyframes } from "styled-components";
 export const Wrapper = styled.div`
   width: 100%;
   height: 15%;
-  padding: 0 8px 4px 8px;
+  padding: 0px 0.5rem 0.25rem 0.5rem;
 `;
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   background-color: var(--lessdark);
   display: flex;
   justify-content: center;
@@ -24,31 +24,32 @@ export const TitleContainer = styled.div<Props>`
   display: flex;
   justify-content: flex-start;
   align-content: center;
-  padding: 5px;
+  padding: 0.313rem;
   user-select: none;
 `;
 
 export const LinksContainer = styled.div`
   flex: 1;
-  padding: 5px;
+  padding: 1.1rem;
   height: 100%;
   display: flex;
-  gap: 23px;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
 `;
 
 export const Logo = styled.img`
   user-select: none;
-  margin-left: 55px;
-  padding: 10px;
+  margin-left: 3.438rem;
+  padding: 0.625rem;
+  scale: 0.7;
 `;
 
 export const Link = styled.a`
   text-decoration: none;
   border-bottom: 1px solid;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
   user-select: none;
@@ -99,7 +100,7 @@ export const Icon = styled.div`
 
 export const IconContainer = styled.div`
   flex: 1;
-  padding: 5px;
+  padding: 0.313rem;
   display: flex;
   justify-content: center;
   align-items: center;

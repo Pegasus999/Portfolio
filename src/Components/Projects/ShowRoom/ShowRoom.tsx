@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BsGithub } from "react-icons/bs";
 import {
   Carousel,
   CarouselHolder,

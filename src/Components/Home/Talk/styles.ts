@@ -33,7 +33,7 @@ interface text {
 export const TextHolder = styled.div<text>`
   flex: 1;
   text-align: ${(props) => props.align};
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: bold;
   font-family: "Poppins", "sans serif";
   color: rgba(243, 243, 243, 0.2);
@@ -51,13 +51,13 @@ export const CircleHolder = styled.div`
 `;
 
 export const BigCircle = styled.div`
-  width: 220px;
+  width: 20rem;
   position: absolute;
-  height: 220px;
+  height: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: -110px;
+  bottom: -10rem;
   border: 5px solid;
   border-radius: 50%;
 `;
@@ -67,13 +67,13 @@ interface Props {
   animate: boolean;
 }
 export const SmallCircle = styled.div<Props>`
-  width: 56px;
+  width: 5rem;
   cursor: pointer;
-  height: 56px;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 27px;
+  font-size: 2.5rem;
   background-color: var(--yellow);
   border-radius: 50%;
   z-index: 1;

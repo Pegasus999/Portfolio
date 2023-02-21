@@ -48,11 +48,11 @@ export const PopUpContainer = styled.div<popUp>`
   width: 30%;
   height: 70%;
   background-color: var(--lessdark);
-  border-radius: 6px;
-  padding: 10px;
+  border-radius: 1rem;
+  padding: 0.625rem;
   animation: ${(props) => (props.animate ? exit : entrence)} 0.5s ease-in-out;
   z-index: 3;
-  gap: 10px;
+  gap: 0.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@ export const IconHolder = styled.div`
   flex: 0.25;
   display: flex;
   align-items: center;
-  padding: 0 8px;
+  padding: 0 0.5rem;
   justify-content: space-between;
 `;
 export const Title = styled.h1`
@@ -75,7 +75,7 @@ export const Title = styled.h1`
 export const Icon = styled.div`
   height: fit-content;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: var(--white);
   opacity: 0.5;
   display: flex;
@@ -89,14 +89,14 @@ export const Icon = styled.div`
 `;
 export const NumberHolder = styled.div`
   width: 100%;
-  flex: 1;
+  flex: 0.5;
   display: flex;
   font-family: "Poppins", sans-serif;
   justify-content: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: var(--yellow);
-  align-items: flex-end;
+  align-items: center;
 `;
 
 export const QrHolder = styled.div`
@@ -115,22 +115,22 @@ export const EmailFormContainer = styled.form<popUp>`
   width: 50%;
   height: fit-content;
   background-color: var(--lessdark);
-  border-radius: 6px;
+  border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   z-index: 3;
-  padding: 10px;
+  padding: 0.625rem;
   animation: ${(props) => (props.animate ? exit : entrence)} 0.5s ease-in-out;
 `;
 
 export const EmailHolder = styled.div`
   width: 100%;
   flex: 1;
-  padding-left: 100px;
-  padding-bottom: 6px;
-  padding-top: 6px;
+  padding-left: 6.25rem;
+  padding-bottom: 0.375rem;
+  padding-top: 0.375rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -141,11 +141,11 @@ export const Email = styled.h3`
   width: 72%;
   color: var(--white);
   opacity: 0.8;
-  padding-left: 20px;
-  margin-left: 64px;
+  padding-left: 1.25rem;
+  margin-left: 4rem;
 `;
 export const Label = styled.label`
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: var(--yellow);
@@ -157,13 +157,13 @@ export const SubjectHolder = styled(EmailHolder)`
 `;
 export const Subject = styled.input`
   width: 72%;
-  height: 50px;
-  margin-left: 23px;
-  border-radius: 16px;
-  padding: 16px;
+  height: 3.125rem;
+  margin-left: 1.438rem;
+  border-radius: 1rem;
+  padding: 1rem;
   background-color: var(--lessdark);
   color: rgba(136, 136, 136, 0.9);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 `;
@@ -174,15 +174,15 @@ export const BodyHolder = styled(EmailHolder)`
   flex: 2;
 `;
 export const Body = styled.textarea`
-  height: 300px;
+  height: 18.75rem;
   vertical-align: top;
   width: 72%;
-  padding: 16px;
-  border-radius: 16px;
+  padding: 1rem;
+  border-radius: 1rem;
   background-color: var(--lessdark);
   color: rgba(136, 136, 136, 0.9);
-  margin-left: 10px;
-  font-size: 20px;
+  margin-left: 0.625rem;
+  font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 `;
@@ -190,19 +190,19 @@ export const Body = styled.textarea`
 export const ButtonHolder = styled(EmailHolder)`
   justify-content: flex-end;
   align-items: center;
-  padding-right: 8px;
+  padding-right: 0.5rem;
 `;
 export const Button = styled.button`
-  padding: 10px;
-  margin-right: 10px;
-  height: 50px;
-  border-radius: 8px;
+  padding: 0.625rem;
+  margin-right: 0.625rem;
+  height: 3.125rem;
+  border-radius: 0.5rem;
   border: 1px solid var(--yellow);
   color: var(--yellow);
   background-color: var(--lessdark);
-  width: 80px;
+  width: 5rem;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   &:hover {
@@ -213,10 +213,10 @@ export const Button = styled.button`
 
 const easeinanimation = keyframes`
   0%{
-    left: -100px;
+    left: -6.25rem;
   }
   100%{
-    left: 20px;
+    left: 1.25rem;
   }
 `;
 interface color {
@@ -224,12 +224,12 @@ interface color {
 }
 export const Toast = styled.div<color>`
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 1.25rem;
+  left: 1.25rem;
   width: fit-content;
-  padding: 10px;
+  padding: 0.625rem;
   font-family: "Poppins", sans-serif;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   background-color: ${(props) => (props.color ? props.color : "var(--yellow)")};
   color: var(--lessdark);
   z-index: 30;

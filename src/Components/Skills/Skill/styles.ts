@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 70%;
   max-height: 90%;
-  padding: 4px 8px 4px 8px;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 `;
 
 export const Container = styled.div`
@@ -15,7 +15,7 @@ export const Container = styled.div`
   height: 100%;
   max-height: 100%;
   background-color: var(--lessdark);
-  border-radius: 16px;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: bold;
   user-select: none;
   font-family: "Poppins", "sans-serif";
@@ -47,7 +47,7 @@ export const SkillsContainer = styled.div`
 const fade = keyframes`
   0%{
     opacity:0;
-    transform: translateX(-150px);
+    transform: translateX(-9.375rem);
   }
   50%{
     opacity: 0;
@@ -61,7 +61,7 @@ const fade = keyframes`
 export const TextContainer = styled.div<Props>`
   width: 50%;
   height: 100%;
-  padding: 16px 75px 16px 75px;
+  padding: 2rem 4.688rem 1rem 4.688rem;
   animation: ${(props) => (props.flip ? fade : "none")} 1s ease-in;
   max-height: 100%;
 `;
@@ -72,8 +72,8 @@ export const Header = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-  margin-top: 20px;
-  font-size: 15px;
+  margin-top: 1.25rem;
+  font-size: 1.3rem;
   overflow: auto;
   color: var(--white);
 `;
@@ -82,8 +82,8 @@ export const List = styled.ul`
   list-style-position: inside;
 `;
 export const ListItem = styled.li`
-  font-size: 15px;
-  padding: 10px 0;
+  font-size: 1.4rem;
+  padding: 0.625rem 0;
   font-weight: 500;
   color: var(--white);
 `;
@@ -91,7 +91,7 @@ export const ListItem = styled.li`
 export const ListContainer = styled.div`
   max-height: 60%;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 `;
 
 const flip = keyframes`
@@ -111,7 +111,7 @@ export const ImageContainer = styled.div<Props>`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 56px;
+  padding-left: 3.5rem;
   cursor: pointer;
   user-select: none;
   user-drag: none;
@@ -119,7 +119,7 @@ export const ImageContainer = styled.div<Props>`
 `;
 
 export const Image = styled.img`
-  border-radius: 16px;
+  border-radius: 1rem;
   user-select: none;
   user-drag: none;
   scale: 0.7;
