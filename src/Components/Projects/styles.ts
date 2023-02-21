@@ -39,7 +39,7 @@ export const Link = styled.a`
 
 export const TitleWrapper = styled.div`
   width: 100%;
-  height: 80%;
+  height: 70%;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 `;
 

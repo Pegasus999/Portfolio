@@ -37,7 +37,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Welcome = styled.div`
-  font-size: 4rem;
+  font-size: 3rem;
   width: 100%;
   /* background-color: red; */
   display: flex;
@@ -53,7 +53,7 @@ export const Welcome = styled.div`
 `;
 
 export const Intro = styled.div`
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--white);
   width: 100%;
   flex: 1;
@@ -69,6 +69,6 @@ export const Intro = styled.div`
 
 export const Image = styled.img`
   user-select: none;
-  width: 20rem;
+  width: 15rem;
   max-width: 23rem;
 `;

@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 16px;
+  border-radius: 1rem;
   background-color: var(--lessdark);
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ interface text {
 export const TextHolder = styled.div<text>`
   flex: 1;
   text-align: ${(props) => props.align};
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: bold;
   font-family: "Poppins", "sans serif";
   color: rgba(243, 243, 243, 0.2);
@@ -51,13 +51,13 @@ export const CircleHolder = styled.div`
 `;
 
 export const BigCircle = styled.div`
-  width: 20rem;
+  width: 15rem;
   position: absolute;
-  height: 20rem;
+  height: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: -10rem;
+  bottom: -7.5rem;
   border: 5px solid;
   border-radius: 50%;
 `;
@@ -67,13 +67,13 @@ interface Props {
   animate: boolean;
 }
 export const SmallCircle = styled.div<Props>`
-  width: 5rem;
+  width: 4rem;
   cursor: pointer;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   background-color: var(--yellow);
   border-radius: 50%;
   z-index: 1;

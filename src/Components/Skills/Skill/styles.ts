@@ -32,7 +32,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   user-select: none;
   font-family: "Poppins", "sans-serif";

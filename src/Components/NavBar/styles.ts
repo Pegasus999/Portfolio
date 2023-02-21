@@ -49,7 +49,7 @@ export const Link = styled.a`
   text-decoration: none;
   border-bottom: 1px solid;
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   user-select: none;
