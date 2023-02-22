@@ -13,17 +13,17 @@ export const Container = styled.div`
   background-color: var(--lessdark);
   border-radius: 16px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const IntroContainer = styled.div`
   height: 100%;
-  flex: 3;
-  padding: 25px;
+  width: 50%;
   display: flex;
   @media (min-width: 768px) {
     justify-content: flex-end;
   }
-
   align-items: center;
   flex-direction: column;
   border-top-left-radius: 16px;
@@ -32,7 +32,6 @@ export const IntroContainer = styled.div`
 export const ImageContainer = styled.div`
   height: 100%;
   user-select: none;
-  flex: 2;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
   display: flex;

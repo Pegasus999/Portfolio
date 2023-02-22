@@ -60,7 +60,8 @@ export const fade = keyframes`
   }
 `;
 export const TextContainer = styled.div<Props>`
-  width: 50%;
+  width: 49%;
+  min-width: 49%;
   height: 100%;
   padding: 2rem 4.688rem 1rem 4.688rem;
   animation: ${(props) => (props.flip ? fade : "none")} 1s ease-in;
