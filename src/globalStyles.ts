@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     * {
@@ -23,4 +23,10 @@ export const GlobalStyles = createGlobalStyle`
       --lessdark: #16181A;
       --yellow: #fbd87b;
     }
+`;
+
+export const Wrapper = styled.div`
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
 `;

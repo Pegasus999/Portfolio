@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 50%;
+  min-height: 50%;
   padding: 4px 8px;
 `;
 
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: var(--lessdark);
   border-radius: 16px;
   display: flex;
@@ -87,5 +88,5 @@ export const Intro = styled.div`
 export const Image = styled.img`
   user-select: none;
   width: 15rem;
-  max-width: 23rem;
+  min-width: 15rem;
 `;

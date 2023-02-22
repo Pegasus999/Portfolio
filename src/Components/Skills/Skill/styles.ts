@@ -5,7 +5,7 @@ export interface Props {
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 70%;
+  min-height: 70%;
   max-height: 90%;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 `;
@@ -17,6 +17,7 @@ export const Container = styled.div`
   background-color: var(--lessdark);
   border-radius: 1rem;
   display: flex;
+  overflow-y: auto;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;

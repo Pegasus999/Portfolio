@@ -51,7 +51,7 @@ const Skill: React.FC = () => {
         const percentX = deltaX / (rect.width / 2);
         const percentY = deltaY / (rect.height / 2);
 
-        div.style.transform = `perspective(350px) rotateX(${
+        div.style.transform = `perspective(400px) rotateX(${
           -percentY * 20
         }deg) rotateY(${percentX * 20}deg)`;
       }

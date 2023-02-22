@@ -13,7 +13,7 @@ import {
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 25%;
+  min-height: 25%;
   padding: 4px 8px;
 `;
 
@@ -21,6 +21,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 1rem;
+  overflow-y: scroll;
   background-color: var(--lessdark);
   display: flex;
   justify-content: center;
@@ -51,13 +52,13 @@ export const CircleHolder = styled.div`
 `;
 
 export const BigCircle = styled.div`
-  width: 15rem;
+  width: 50%;
   position: absolute;
-  height: 15rem;
+  height: 140%;
   display: flex;
+  bottom: -70%;
   justify-content: center;
   align-items: center;
-  bottom: -7.5rem;
   border: 5px solid;
   border-radius: 50%;
 `;
@@ -67,13 +68,13 @@ interface Props {
   animate: boolean;
 }
 export const SmallCircle = styled.div<Props>`
-  width: 4rem;
+  width: 25%;
   cursor: pointer;
-  height: 4rem;
+  height: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   background-color: var(--yellow);
   border-radius: 50%;
   z-index: 1;

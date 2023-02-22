@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 `;
 export const FooterWrapper = styled.div`
   width: 100%;
-  height: 15%;
+  min-height: 15%;
   padding: 0.25rem 0.5rem 0px 0.5rem;
 `;
 export const Footer = styled.div`
@@ -87,7 +87,6 @@ export const Title = styled.h1<Ani>`
 
 export const ShowCase = styled.div`
   min-height: 40%;
-  margin: 3rem;
   width: 100%;
   display: flex;
   padding: 1rem;

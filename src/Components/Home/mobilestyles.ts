@@ -5,29 +5,27 @@ export const MobileWrapper = styled.div`
   height: 50%;
   padding: 0.25rem 0.5rem;
 `;
+
 export const MobileContainer = styled.div`
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  overflow: scroll;
   border-radius: 1rem;
-  align-items: center;
   background-color: var(--lessdark);
 `;
 
 export const MobileImageContainer = styled.div`
-  @media (min-width: 550) {
-    width: 50%;
-  }
-  height: fit-content;
+  min-height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 `;
 
 export const Img = styled.img`
+  @media (min-width: 550px) {
+    max-width: 100%;
+    height: auto;
+  }
   max-width: 50%;
   object-fit: cover;
 `;

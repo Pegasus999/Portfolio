@@ -18,15 +18,13 @@ export const MobileContainer = styled.div`
   width: 100%;
   height: 100%;
   background-color: var(--lessdark);
-  display: flex;
-  flex-direction: column;
   border-radius: 1rem;
-  overflow-y: auto;
+  overflow-y: scroll;
 `;
 
 export const TextContainer = styled.div<Props>`
   width: 100%;
-  height: 50%;
+  min-height: 50%;
   padding: 1rem;
   color: var(--white);
   animation: ${(props) => (props.flip ? fade : "none")} 1s ease-in;
@@ -47,6 +45,7 @@ export const ListItem = styled.li`
 `;
 
 export const ImageContainer = styled.div<Props>`
+  min-height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
