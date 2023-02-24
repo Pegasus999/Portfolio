@@ -55,6 +55,7 @@ export const Welcome = styled.div`
     flex: 1;
     user-select: none;
   }
+  text-align: center;
   font-size: 2rem;
   font-weight: 600;
   color: var(--yellow);
@@ -68,7 +69,7 @@ export const Intro = styled.div`
     width: 100%;
     flex: 1;
     /* background-color: blue; */
-    padding: 15px 15px 15px 40px;
+    padding: 15px 120px 15px 40px;
     display: flex;
     align-items: flex-start;
     text-align: start;

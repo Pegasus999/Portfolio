@@ -20,6 +20,17 @@ export const MobileImageContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
+export const IntroContainer = styled.div`
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+`;
 
 export const Img = styled.img`
   @media (min-width: 550px) {

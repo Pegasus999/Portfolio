@@ -15,8 +15,8 @@ const About: React.FC = () => {
         <IntroContainer>
           <Welcome>Hi! i'm Adem</Welcome>
           <Intro>
-            i'm a software engineer & full-stack developer, you request
-            something and i build it
+            I build custom websites and applications that deliver seamless user
+            experiences and help businesses achieve their goals.
           </Intro>
         </IntroContainer>
         <ImageContainer>

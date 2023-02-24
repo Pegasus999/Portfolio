@@ -36,13 +36,6 @@ export const Header = styled.h1`
 export const Paragraph = styled.p`
   font-size: 1rem;
 `;
-export const List = styled.ul`
-  list-style-position: inside;
-`;
-export const ListItem = styled.li`
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-`;
 
 export const ImageContainer = styled.div<Props>`
   min-height: 50%;

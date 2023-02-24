@@ -37,11 +37,12 @@ import {
   ContactContainer,
   ContactWrapper,
   Img,
+  IntroContainer,
   MobileContainer,
   MobileImageContainer,
   MobileWrapper,
 } from "./mobilestyles";
-import { Intro, IntroContainer, Welcome } from "./About/styles";
+import { Intro, Welcome } from "./About/styles";
 import { SiGmail } from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
 
@@ -204,8 +205,9 @@ const Home: React.FC = () => {
                 <IntroContainer>
                   <Welcome>Hi! i'm Adem</Welcome>
                   <Intro>
-                    i'm a software engineer & full-stack developer, you request
-                    something and i build it
+                    I build custom websites and applications that deliver
+                    seamless user experiences and help businesses achieve their
+                    goals.
                   </Intro>
                 </IntroContainer>
               </MobileContainer>

@@ -4,9 +4,6 @@ import {
   Header,
   Image,
   ImageContainer,
-  List,
-  ListContainer,
-  ListItem,
   Paragraph,
   SkillsContainer,
   TextContainer,
@@ -74,33 +71,27 @@ const Skill: React.FC = () => {
               <>
                 <Header>Front-end :</Header>
                 <Paragraph>
-                  when it comes to Front-end, apart from the will and ability to
-                  learn anything here are some of the technologies i work with:
+                  Creating user-friendly and visually stunning Front-end
+                  experiences is my passion. I specialize in using modern
+                  technologies such as ReactJS, JavaScript/TypeScript, and
+                  Flutter to build custom solutions that exceed your
+                  expectations. With experience in frameworks like React Native
+                  and Electron, as well as platforms like WordPress, I have the
+                  versatility to deliver the best solution for your business
+                  needs
                 </Paragraph>
-                <ListContainer>
-                  <List>
-                    <ListItem>ReactJS / native</ListItem>
-                    <ListItem>Javascript/TypeScript</ListItem>
-                    <ListItem>Electron</ListItem>
-                    <ListItem>Flutter</ListItem>
-                  </List>
-                </ListContainer>
               </>
             ) : (
               <>
                 <Header>Back-end :</Header>
                 <Paragraph>
-                  when it comes to Back-end, apart from the will and ability to
-                  learn anything here are some of the technologies i work with:
+                  As a Back-end developer, I take pride in building robust and
+                  scalable systems that power your applications. I specialize in
+                  using modern technologies like NodeJS, Postgresql/MySQL, and
+                  PHP to create custom solutions that meet your specific needs.
+                  With experience in ORM solutions like Prisma and Sequelize, I
+                  ensure that your data is well-managed and secure.
                 </Paragraph>
-                <ListContainer>
-                  <List>
-                    <ListItem>NodeJs</ListItem>
-                    <ListItem>Postgresql/MySQL</ListItem>
-                    <ListItem>php</ListItem>
-                    <ListItem>Prisma/Sequelize</ListItem>
-                  </List>
-                </ListContainer>
               </>
             )}
           </TextContainer>

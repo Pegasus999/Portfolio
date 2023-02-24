@@ -80,22 +80,6 @@ export const Paragraph = styled.p`
   color: var(--white);
 `;
 
-export const List = styled.ul`
-  list-style-position: inside;
-`;
-export const ListItem = styled.li`
-  font-size: 1.4rem;
-  padding: 0.625rem 0;
-  font-weight: 500;
-  color: var(--white);
-`;
-
-export const ListContainer = styled.div`
-  max-height: 60%;
-  width: 100%;
-  margin-top: 1.25rem;
-`;
-
 export const flip = keyframes`
   from{
    
